@@ -1,0 +1,164 @@
+.contact {
+	display: flex;
+	justify-content: space-between;
+	background-image: url(../../img/bg-contact.png);
+	background-position: center;
+	background-size: cover;
+	height: 92.4rem;
+	padding: 15.4rem 0;
+}
+.contact-info {
+	&__address {
+		margin-bottom: 8.7rem;
+	}
+
+	&__contact {
+         margin-bottom: 3rem;
+	}
+
+	&__heading {
+		opacity: 0.3;
+		color: #ffffff;
+		font-family: 'Proxima Nova';
+		font-size: 2.8rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		text-transform: uppercase;
+		margin-bottom: 2.5rem;
+	}
+
+	&__text {
+		color: #ffffff;
+		font-family: 'Proxima Nova';
+		font-size: 2.8rem;
+		font-weight: 700;
+		line-height: 6rem;
+		text-transform: uppercase;
+	}
+
+	&__icons {
+        display: flex;
+	}
+
+	&__icons-item {
+        display: flex;
+        justify-content: center;
+        width: 3.6rem;
+        height: 3.6rem;
+        margin-right: 3rem;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+		}
+		
+		& img {
+			width: inherit;
+			height: inherit;
+		}
+	}
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	&__message {
+		width: 124rem;
+		min-height: 31.7rem;
+		background-color: #ffffff1a;
+		color: #ffffff;
+		font-family: 'Proxima Nova';
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 3.6rem;
+		text-transform: uppercase;
+		padding: 5.5rem 4rem;
+		outline: none;
+		border: none;
+		border-radius: 0.4rem;
+		&::placeholder {
+			color: #ffffff9e;
+		}
+	}
+
+	&__inputs {
+		display: flex;
+		justify-content: space-between;
+		margin: 3.9rem 0;
+	}
+
+	&__name {
+		width: 60rem;
+		height: 10.3rem;
+		background-color: #ffffff1a;
+		outline: none;
+		border: none;
+		color: #ffffff;
+		font-family: 'Proxima Nova';
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 3.6rem;
+		text-transform: uppercase;
+		padding: 4.7rem 4.3rem;
+		border-radius: 0.4rem;
+		&::placeholder {
+			color: #ffffff9e;
+		}
+	}
+
+	&__email {
+		width: 60rem;
+		height: 10.3rem;
+		background-color: #ffffff1a;
+		outline: none;
+		border: none;
+		color: #ffffff;
+		font-family: 'Proxima Nova';
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 3.6rem;
+		text-transform: uppercase;
+		padding: 4.7rem 4.3rem;
+		border-radius: 0.4rem;
+		&::placeholder {
+			color: #ffffff9e;
+		}
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		width: 38rem;
+		color: #f49244;
+		font-family: 'Proxima Nova - Semibold';
+		font-size: 2.6rem;
+		font-weight: 400;
+		line-height: 4.803rem;
+		text-transform: uppercase;
+		padding: 2.1rem 4.2rem;
+		box-shadow: 0.5rem 0.9rem 1rem rgba(0, 0, 0, 0.13);
+		background-color: #ffffff;
+		outline: none;
+		border: none;
+        border-radius: 0.4rem;
+        cursor: pointer;
+		&::before {
+			content: "";
+			background-image:url(../../img/paperplane.svg );
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+            margin-right: 3rem;
+            width: 6.4rem;
+            height: 6.4rem;
+        }
+        
+        &:hover{
+            background-color: darken(#ffffff,  5%);
+        }
+
+        &:active{
+            box-shadow: none;
+        }
+	}
+}

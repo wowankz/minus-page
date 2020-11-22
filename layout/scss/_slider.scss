@@ -1,0 +1,105 @@
+.slider {
+	position: relative;
+	padding-left: calc((100% - 245.6rem) / 2);
+	padding-right: calc((100% - 245.6rem) / 2);
+	&__images {
+		width: 245.6rem;
+		height: 106.8rem;
+		box-shadow: 0.5rem 0.9rem 1rem rgba(0, 0, 0, 0.13);
+		background-color: #8a8a8a;
+	}
+	&__img {
+		width: 245.6rem;
+		height: 106.8rem;
+		display: none;
+	}
+}
+.slider-content {
+	width: 124rem;
+	position: absolute;
+	left: 14.4rem;
+	top: 41.8rem;
+	&__row {
+		display: flex;
+		&_align-right {
+			justify-content: flex-end;
+		}
+	}
+	&__text {
+		width: 103.8rem;
+		height: 19.8rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0.5rem 0.9rem 1rem rgba(0, 0, 0, 0.13), 0 0 1rem rgba(0, 0, 0, 0.09);
+		background-color: #ffffff;
+		border-radius: 0.4rem;
+		padding: 8.2rem 6rem 5.5rem;
+		z-index: 1;
+		& p {
+			width: 90.5rem;
+			color: #30323a;
+			font-family: 'Proxima Nova';
+			font-size: 2.8rem;
+			font-weight: 400;
+			font-style: normal;
+			letter-spacing: normal;
+			line-height: 3.6rem;
+			text-align: left;
+		}
+	}
+}
+.slider-control {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 19.8rem;
+	height: 19.8rem;
+	box-shadow: 0.5rem 0.9rem 1rem rgba(0, 0, 0, 0.13), 0 0 1rem rgba(0, 0, 0, 0.09);
+	border-radius: 0.4rem;
+	margin-right: 0.4rem;
+	&__box {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 16.8rem;
+		height: 16.8rem;
+		background-color: #30323a;
+		border-radius: 0.4rem;
+		padding-top: 6rem;
+	}
+	&__button {
+		padding: 1.6rem 2.4rem;
+		height: 5.8rem;
+		&:first-child {
+			border-right: 0.2rem solid #ffffff1a;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__button-img {
+		width: 1.6rem;
+		height: 1.8rem;
+		transition: 0.3s;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	&__amount {
+		height: 2rem;
+		flex-basis: 100%;
+		opacity: 0.2;
+		color: #ffffff;
+		font-family: 'Proxima Nova';
+		font-size: 2rem;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		text-align: center;
+	}
+}

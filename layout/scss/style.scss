@@ -1,0 +1,76 @@
+@import './header';
+@import './slider';
+@import './action';
+@import './contact';
+@import './footer';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+html{
+	font-size: 10px;
+}
+
+.page {
+	width: 256.7rem;
+	margin: 0 auto;
+	background-color: #30323a;
+}
+
+.center {
+	padding-right: calc((100% - 188rem) / 2);
+	padding-left: calc((100% - 188rem) / 2);
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	background-color: #97c13c;
+	border-radius: 0.4rem;
+	padding: 3rem 3.4rem;
+	color: #ffffff;
+	font-family: 'Proxima Nova - Semibold';
+	font-size: 2.6rem;
+	font-weight: 400;
+	line-height: 4.8rem;
+	text-align: left;
+	text-transform: uppercase;
+	box-shadow: 0.5rem 0.9rem 1rem rgba(0, 0, 0, 0.13);
+	transition: 0.3s;
+	&::before {
+		content: "";
+		background-image: url(../../img/note.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 6.4rem;
+		height: 6rem;
+		margin-right: 2.7rem;
+	}
+
+	&:hover {
+		background-color: darken(#97c13c, 5%);
+	}
+
+	&:active {
+		box-shadow: none;
+	}
+}
+
+@media (max-width: 2560px) {
+	html {
+		font-size: 0.383vw;
+	}
+}
