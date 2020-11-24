@@ -3,6 +3,7 @@
 	height: 21.7rem;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -84,4 +85,108 @@
 			height: 3.2rem;
 		}
 	}
+}
+
+.nav-show {
+	display: flex;
+	left: 0;
+}
+
+.c-hamburger {
+	display: none;
+	position: fixed;
+	overflow: hidden;
+	right: 2vw;
+	margin: 0;
+	padding: 0;
+	width: 45px;
+	height:48px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+	z-index: 1000;
+}
+
+.c-hamburger:focus {
+	outline: none;
+}
+
+.c-hamburger span {
+	display: block;
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	right: 0px;
+	height: 8px;
+	background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background-color: #fff;
+	content: '';
+}
+
+.c-hamburger span::before {
+	top: -14px;
+}
+
+.c-hamburger span::after {
+	bottom: -14px;
+}
+
+.c-hamburger--htx {
+	background-color:transparent;
+}
+
+.c-hamburger--htx span {
+	transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+	transition-duration: 0.3s, 0.3s;
+	transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+	transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+	transition-property: bottom, transform;
+}
+
+/* состояние active при открытом меню  */
+.c-hamburger--htx.is-active {
+	background-color: #d32f2f;
+}
+
+.c-hamburger--htx.is-active span {
+	background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+	transition-delay: 0s, 0.3s;
 }

@@ -1,0 +1,148 @@
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1199.98px) {
+	html {
+		font-size: 4.5px;
+	}
+
+	.slider {
+		padding-left: calc((100% - 94vw) / 2);
+		padding-right: calc((100% - 94vw) / 2);
+		&__images {
+			width: 100%;
+		}
+	}
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
+	.center {
+		padding-right: calc((100% - 162rem) / 2);
+		padding-left: calc((100% - 162rem) / 2);
+	}
+	.slider-content {
+		width: auto;
+	}
+
+	.slider-content__text {
+		width: 50vw;
+	}
+	.contact {
+		flex-direction: column;
+		height: auto;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.contact-info {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact-form__message {
+		width: auto;
+	}
+
+	.contact-form__name {
+		width: 36vw;
+	}
+
+	.contact-form__email {
+		width: 36vw;
+	}
+}
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+	.page {
+		padding: 0 3rem;
+	}
+	.header-search {
+		margin: 0 auto;
+	}
+	.nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		background-color: #30323afa;
+		z-index: 9;
+		width: 60vw;
+        transform: translateX(-150%);
+        transition: 0.4s;
+		&.nav-show {
+            display: block;
+            top: 0;
+			left: 0vw;
+			position: fixed;
+			transform: translateX(0);
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__link {
+			font-size: 5rem;
+			padding: 6rem;
+		}
+	}
+	.c-hamburger {
+		display: block;
+	}
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+	.slider {
+		display: none;
+	}
+
+	.contact-info {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.contact-info__icons {
+		flex-basis: 100%;
+		margin-bottom: 10rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.contact-form__button {
+		align-self: center;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-content__left {
+		margin: 10rem 0;
+	}
+
+	.footer-content__right {
+		align-items: center;
+	}
+
+	.footer-copyright {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 374.99px) {
+	.logo {
+		flex-basis: 100%;
+		text-align: center;
+		margin: 8rem 0;
+	}
+
+	.contact-info__address,
+	.contact-info__contact {
+		flex-basis: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

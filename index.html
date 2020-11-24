@@ -24,6 +24,9 @@
 					<input type="text" class="header-search__input" />
 					<button class="header-search__button"></button>
 				</form>
+				<button class="c-hamburger c-hamburger--htx">
+					<span>toggle menu</span>
+				</button>
 			</header>
 
 			<div class="slider">
@@ -123,5 +126,21 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+			function toggle() {
+				let toggles = document.querySelector('.c-hamburger');
+				let nav = document.querySelector('.nav');
+				toggleHandler(toggles, nav);
+
+				function toggleHandler(toggle,nav) {
+					toggle.addEventListener('click', function (e) {
+						e.preventDefault();
+						this.classList.toggle('is-active');
+						nav.classList.toggle('nav-show');
+					});
+				}
+			}
+			toggle();
+		</script>
 	</body>
 </html>

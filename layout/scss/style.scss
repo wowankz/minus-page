@@ -16,7 +16,7 @@ html{
 }
 
 .page {
-	width: 256.7rem;
+	max-width: 256.7rem;
 	margin: 0 auto;
 	background-color: #30323a;
 }
@@ -74,3 +74,5 @@ li {
 		font-size: 0.383vw;
 	}
 }
+
+@import './media';
